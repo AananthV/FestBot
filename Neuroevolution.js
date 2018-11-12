@@ -37,7 +37,7 @@ var Neuroevolution = function (options) {
 		// generation (rate).
 		randomBehaviour: 0.2, // New random networks for the next generation
 		// (rate).
-		mutationRate: 0.1, // Mutation rate on the weights of synapses.
+		mutationRate: 0.2, // Mutation rate on the weights of synapses.
 		mutationRange: 0.5, // Interval of the mutation changes on the
 		// synapse weight.
 		historic: 0, // Latest generations saved.

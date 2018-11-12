@@ -86,7 +86,7 @@ Bird.prototype.isDead = function(height, pipes){
 	for(var i in pipes){
 		if(!(
 			this.x > pipes[i].x + pipes[i].width ||
-			this.x + this.width < pipes[i].x || 
+			this.x + this.width < pipes[i].x ||
 			this.y > pipes[i].y + pipes[i].height ||
 			this.y + this.height < pipes[i].y
 			)){
@@ -256,7 +256,7 @@ Game.prototype.display = function(){
 	this.ctx.strokeStyle = "#CE9E00";
 	for(var i in this.birds){
 		if(this.birds[i].alive){
-			this.ctx.save(); 
+			this.ctx.save();
 			this.ctx.translate(this.birds[i].x + this.birds[i].width/2, this.birds[i].y + this.birds[i].height/2);
 			this.ctx.rotate(Math.PI/2 * this.birds[i].gravity/20);
 			this.ctx.drawImage(images.bird, -this.birds[i].width/2, -this.birds[i].height/2, this.birds[i].width, this.birds[i].height);
@@ -264,7 +264,7 @@ Game.prototype.display = function(){
 		}
 	}
 
-	this.ctx.fillStyle = "white";
+	this.ctx.fillStyle = "black";
 	this.ctx.font="20px Oswald, sans-serif";
 	this.ctx.fillText("Score : "+ this.score, 10, 25);
 	this.ctx.fillText("Max Score : "+this.maxScore, 10, 50);
