@@ -1,4 +1,4 @@
-# FestBot ([Demo](http://aananthv.github.io/FlappyLearning/))
+# FestBot ([Demo](http://aananthv.github.io/FestBot/))
 
 Program that learns to play the Festermber'18 Game by machine learning ([Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution))
 
