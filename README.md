@@ -1,8 +1,6 @@
-# Flappy Learning ([Demo](http://xviniette.github.io/FlappyLearning/))
+# FestBot ([Demo](http://aananthv.github.io/FlappyLearning/))
 
-Program that learns to play Flappy Bird by machine learning ([Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution))
-
-![alt tag](https://github.com/xviniette/FlappyLearning/blob/gh-pages/img/flappy.png?raw=true)
+Program that learns to play the Festermber'18 Game by machine learning ([Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution))
 
 ### [NeuroEvolution.js](http://github.com/xviniette/FlappyLearning/blob/gh-pages/Neuroevolution.js) : Utilization
 ```javascript
@@ -33,4 +31,6 @@ var generation = ne.nextGeneration();
 ne.networkScore(generation[x], <score = 0>);
 ```
 
-You can see the NeuroEvolution integration in Flappy Bird in [Game.js](http://github.com/xviniette/FlappyLearning/blob/gh-pages/game.js).
+You can see the NeuroEvolution integration in Flappy Bird in [Game.js](http://github.com/xviniette/FlappyLearning/blob/gh-pages/game.js) (Original).
+
+You can see the NeuroEvolution integration in Festember in [FestGame.js](http://github.com/AananthV/FestBot/festgame.js) (This Repository).
