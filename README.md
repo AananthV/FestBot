@@ -35,4 +35,4 @@ ne.networkScore(generation[x], <score = 0>);
 
 You can see the NeuroEvolution integration in Flappy Bird in [Game.js](http://github.com/xviniette/FlappyLearning/blob/gh-pages/game.js) (Original).
 
-You can see the NeuroEvolution integration in Festember in [FestGame.js](http://github.com/AananthV/FestBot/festgame.js) (This Repository).
+You can see the NeuroEvolution integration in Festember in [FestGame.js](http://github.com/AananthV/FestBot/blob/gh-pages/festgame.js) (This Repository).
