@@ -2,6 +2,8 @@
 
 Program that learns to play the Festermber'18 Game by machine learning ([Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution))
 
+## FIXME: Avatar Ignores Birds. (Underfitting?)
+
 ### [NeuroEvolution.js](http://github.com/xviniette/FlappyLearning/blob/gh-pages/Neuroevolution.js) : Utilization
 ```javascript
 // Initialize
