@@ -275,7 +275,7 @@ Game.prototype.update = function(){
   if(this.birdInterval == 0 && this.bird == undefined){
     var height = Math.round(Math.random() * (this.height/2));
     this.bird = new Bird({x: this.width, y: height});
-    this.birdSpawnInterval = 30 + Math.round(Math.random()*30);
+    this.birdSpawnInterval = 60 + Math.round(Math.random()*60);
   }
 
   this.poleInterval++;
