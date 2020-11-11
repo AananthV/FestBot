@@ -213,15 +213,15 @@ Game.prototype.update = function(){
   if(this.players.length > 0){
     for(var i in this.poles){
       if(this.poles[i].x + this.poles[i].width > this.players[0].x){
-        nextPolex = 1 - this.poles[i].x/this.width;
+        nextPolex = this.poles[i].x/this.width;
         nextPoley = this.poles[i].y/this.height;
         break;
       }
     }
     if(this.bird != undefined){
       if(this.bird.x + this.bird.width > this.players[0].x){
-        nextBirdx = 1 - this.bird.x/this.width;
-        nextBirdy = this.bird.height/this.height;
+        nextBirdx = this.bird.x/this.width;
+        nextBirdy = this.bird.y/this.height;
       }
     }
   }
@@ -235,6 +235,7 @@ Game.prototype.update = function(){
         nextPolex,
         nextPoley
       ];
+      if (i==0) console.log(inputs);
 			//console.log(inputs);
       var res = this.gen[i].compute(inputs);
       this.players[i].flap(res);
@@ -266,14 +267,14 @@ Game.prototype.update = function(){
   }
 
   if(this.poleInterval == 0){
-    var height = Math.round(Math.random() * (this.height/3) + (this.height/2));
+    let height = Math.round(Math.random() * (this.height/3) + (this.height/2));
     p = new Pole({x: this.width, y: height});
     this.poles.push(p);
     this.poleSpawnInterval = 40 + Math.round(Math.random()*40);
   }
 
   if(this.birdInterval == 0 && this.bird == undefined){
-    var height = Math.round(Math.random() * (this.height/2));
+    let height = Math.round(Math.random() * (this.height/2));
     this.bird = new Bird({x: this.width, y: height});
     this.birdSpawnInterval = 60 + Math.round(Math.random()*60);
   }
